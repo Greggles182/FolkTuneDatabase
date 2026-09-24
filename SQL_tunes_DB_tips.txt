@@ -1,0 +1,12 @@
+SQL tunes DB tips:
+.shell cls
+.mode colum
+.headers on
+SELECT * FROM tunes;
+INSERT INTO tunes VALUES ('Mominette', NULL, 'trad', 'Halsway 2025', NULL, NULL, 2025, NULL, 'E minor');
+UPDATE tunes SET name = 'Burwell Lode' WHERE name LIKE 'B%';
+DELETE FROM tunes WHERE name LIKE 'B%';
+.tables
+.mode box
+SELECT name FROM sqlite_master
+.mode qbox
