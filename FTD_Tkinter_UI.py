@@ -29,6 +29,7 @@ def searchTunes():
     main_frame.pack_forget()
     updateSearchedTunes("")
     search_tunes_frame.pack(fill="both", expand=True)
+    window.geometry("1000x500+50+50")
 
 def searchInputChange(*args):
     current_input = [search_input_box.get()]
