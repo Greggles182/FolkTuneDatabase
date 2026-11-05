@@ -83,7 +83,7 @@ def clear():
     add_edit_index = 0
     add_name = ""
     edit_name = "<collumn>:<value>"
-    add_SQL = "INSERT INTO tunes VALUES (<name>, <other_names>, <writer>, <discovered_at>,\n NULL, <notes>, <year_learned>, <type>, <key>);"
+    add_SQL = "INSERT INTO tunes VALUES (<name>, <other_names>, <writer>, <discovered_at>,\n <notes>, <year_learned>, <type>, <key>);"
     add_tune_text.set(add_SQL)
     edit_SQL = "UPDATE tunes SET <collumn> = <value> WHERE <condition>;"
     edit_tune_text.set(edit_SQL)
@@ -245,7 +245,7 @@ add_edit_tune_input = tk.StringVar()
 add_edit_index = 0
 add_name = ""
 edit_name = "<collumn>:<value>"
-add_SQL = "INSERT INTO tunes VALUES (<name>, <other_names>, <writer>, <discovered_at>,\n NULL, <notes>, <year_learned>, <type>, <key>);"
+add_SQL = "INSERT INTO tunes VALUES (<name>, <other_names>, <writer>, <discovered_at>,\n <notes>, <year_learned>, <type>, <key>);"
 add_tune_text.set(add_SQL)
 edit_SQL = "UPDATE tunes SET <collumn> = <value> WHERE <condition>;"
 edit_tune_text.set(edit_SQL)
